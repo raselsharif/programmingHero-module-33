@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .heading h1 {
+            background: rgba(50, 54, 54, 0.644);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+
+        #photos-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background: lightcyan;
+            padding: 30px 10px;
+        }
+
+        #photos-container div {
+            box-shadow: 0 0 10px rgba(53, 51, 51, 0.692);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px 10px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        #photos-container div img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="heading">
+                <h1>All photos</h1>
+            </div>
+            <div id="photos-container">
+            </div>
+        </section>
+    </main>
+    <script src="js/photos.js"></script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@ function displayComments(comments) {
         commentsDiv.innerHTML = `
         <h2>ID: ${comment.id}</h2>
         <h3>Name: ${comment.name}</h3>
-        <a href="">Email: ${comment.email}</a>
+        <a  href="mailto:${comment.email}">Email: ${comment.email}</a>
         <p>Comments: ${comment.body}</p>
         `
         commentsContainer.appendChild(commentsDiv)
