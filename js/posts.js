@@ -13,7 +13,7 @@ function displayPost(posts) {
         postDiv.innerHTML = `
         <h3>ID: ${post.id}</h3>
         <h5>Title: ${post.title}</h5>
-        <p>Details: ${post.body}</p>
+        <p> <span class="details-head">Details: </span>${post.body}</p>
         `
         postContainer.appendChild(postDiv);
     }
